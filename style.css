@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --Kumbh-Sans-font: "Kumbh Sans", sans-serif;
+  --name-stats-font-size: 18px;
+  --Dark-gray: hsl(0, 0%, 59%);
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: var(--name-stats-font-size);
+  font-family: var(--Kumbh-Sans-font);
+  background-color: var(--Dark-cyan);
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom 35vh right 50vw, top 50vh left 50vw;
+  /*background-position: top 50vh left 10vw, bottom -515px right -125px;*/
+  /*background-size: 800px auto, 800px auto;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.profile-card {
+  margin: 15px;
+  width: 350px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 24px 20px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+  position: relative;
+  height: 200px;
+}
+.bg-head {
+  height: 150px;
+  background: url(images/bg-pattern-card.svg);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.user-icon {
+  border: solid 5px white;
+  border-radius: 50%;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, 50%);
+  bottom: 45px;
+}
+.profile-info {
+  padding: 20px;
+  text-align: center;
+}
+.name {
+  margin: 6px;
+  font-size: 18px;
+  display: inline-block;
+}
+.age,
+.city {
+  color: var(--Dark-gray);
+}
+.city {
+  font-size: 14px;
+  font-weight: 700;
+}
+.stats {
+  text-align: center;
+  display: flex;
+  padding: 24px;
+  border-top: solid 1px hsl(0, 0%, 90%);
+  display: flex;
+  justify-content: space-around;
+  color: var(--Dark-gray);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.cnt {
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0;
+}
